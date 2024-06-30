@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+    font-size: 1.5vmin;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+body {
+    display: block;
+    background-color: #222;
+    width: 100vw;
+    height: 100vh;
+}
+.scroll{
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    scroll-snap-stop: always;
+    overflow-x: hidden;
+   
+}
+
+.container {
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+    background-color: #E8810C;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.5em 0.5em 0em 0.25em #4b3100;
+    
+}
+.content{
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    position: relative;
+}

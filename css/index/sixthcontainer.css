@@ -1,0 +1,60 @@
+.section6container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.theend{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.theend .section6text{
+    position: absolute;
+    font-size: 10rem;
+    direction: rtl;
+    color: transparent;
+    background-image: linear-gradient(to right , rgb(255, 0, 0) ,rgb(55, 0, 255),rgb(0, 238, 40));
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 300%;
+    animation: textmoving 3s infinite ease-in-out alternate;
+    pointer-events: none;
+}
+.theend .details{
+    direction: rtl;
+    color: bisque;
+    position: relative;
+    top:6em;
+    text-align: center;
+    font-size: 1.25rem;
+}
+.theend .details a ,.theend .details a:visited{
+    font-size: 1.25rem;
+    text-align: center;
+    text-decoration: underline;
+    color:bisque;
+    transition: all 200ms ;
+}
+.theend .details a:hover{
+    color:burlywood;
+}
+.theend .visitcount{
+    position: relative;
+    top:10em;
+    font-size: 1.15rem;
+}
+@keyframes textmoving {
+
+   0%{
+    background-position: left;
+   }
+   100%{background-position: right;
+   }
+    
+}
