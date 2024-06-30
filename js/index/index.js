@@ -1,19 +1,3 @@
-// console.log(window.innerHeight);
-// console.log(50*window.innerHeight/window.screen.height);
-// var ileft = 100*window.innerHeight/window.screen.height;
-// var ibottom=100*window.innerWidth/window.screen.width;
-// var fleft=50*window.innerHeight/window.screen.height;
-// var fbottom=20*window.innerWidth/window.screen.width;
-// var hyp = Math.sqrt(Math.pow(ileft-fleft,2)+Math.pow(ibottom-fbottom,2));
-// console.log(hyp);
-// var degree = Math.acos((fbottom-ibottom)/hyp);
-// if(ileft > fleft || ibottom > fbottom)
-//     degree *=-1;
-// console.log(degree);
-// stars = document.getElementsByClassName("star");
-// console.log(stars);
-// stars[0].style="--color:white; --ileft:"+ileft+"%; --fleft:"+fleft+"%; --ibottom:"+ibottom+"%; --fbottom:"+fbottom+"%; --degree:"+degree+"rad";
-// console.log(stars);
 var starcontainer = document.getElementsByClassName("starcontainer")[0];
 function randomColor(){
     var red =Math.floor(Math.random()*50 + 100 + 1);
