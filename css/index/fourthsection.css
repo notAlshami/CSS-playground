@@ -1,0 +1,113 @@
+.section4container{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
+.block{
+    position: relative;
+    width: 75%;
+    height: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+.section4container .block .eyecontainer{
+    position: relative;
+    width: 10em;
+    height: 10em;
+    background-color: aqua;
+    border-radius: 0 50% 0 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0px 0px 0.5em 0px black;
+    transform: rotate(-45deg);
+    
+    
+}
+.eyecontainer .eye{
+    position: relative;
+    width: 8.75em;
+    height: 8.75em;
+    background-color: wheat;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow:inset 0px 0px 0.5em 0.1em black;
+    transform: rotate(45deg);
+    
+}
+
+.eyecontainer .eye .pupil{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.firstpart{
+    position: absolute;
+    width: 5em;
+    height: 5em;
+    background-color: whitesmoke;
+    z-index: 0;
+    border-radius: 50%;
+    box-shadow:inset 0px -0.1em 0.5em 0.1em black;
+    transition: background-color 2s ease-in-out;
+}
+.secondpart{
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0px 0px 0.5em 0.1em black;
+}
+.thirdpart{
+    position: absolute;
+    width: 0.5em;
+    height: 1.5em;
+    background-color: whitesmoke;
+    border-radius: 50em;
+    z-index: 2;
+    box-shadow: 0px 0px 0.5em 0.05em white;
+}
+.eyecontainer:hover .eye .eyelid {  
+    top:-3.75em;
+    height: 6em;
+}
+
+.eyecontainer:nth-child(1):hover .eye .pupil .firstpart{  
+    background-color: darkred;
+    
+}
+
+.eyecontainer:nth-child(2):hover .eye .pupil .firstpart{  
+    background-color: darkgreen;
+    
+}
+.eyecontainer:nth-child(3):hover .eye .pupil .firstpart{  
+    background-color: darkblue;
+    
+}
+.eye .eyelid{
+    position: absolute;
+    width: 8.75em;
+    height: 8.75em;
+    background-color: rgb(255, 233, 111);
+    border-radius: 50%;
+    transition: top 1s ease-out,height 1s ease-out,filter 1s ease-in;
+    box-shadow: inset 0px 0.5em 0.5em 0.5em rgb(170, 154, 66);
+    z-index: 3;
+    top:0;
+}
