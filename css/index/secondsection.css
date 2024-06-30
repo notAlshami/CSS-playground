@@ -1,132 +1,123 @@
-.whiteSpace{
-    width: 100%;
-    height: 100%;
-    background-color: #b6e2f3;
-    overflow: hidden;
-    position: relative;
+.whiteSpace {
+  width: 100%;
+  height: 100%;
+  background-color: #b6e2f3;
+  overflow: hidden;
+  position: relative;
+}
+.section2container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section2text {
+  font-size: 10rem;
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
 }
 
-.section2container{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.balloonsvg {
+  width: 5em;
+  height: 5em;
 }
-.section2text{
-    font-size: 10rem;
-    position: relative;
-    z-index: 1;
-    pointer-events: none;
+.floatingballoons {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
 }
-
-.balloonsvg{
-    width: 5em;
-    height: 5em;
-}
-.floatingballoons{
-    
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-}
-.balloon{
-    position: relative;
-    opacity: 0;
-    bottom: -10%;
-    animation: float 7.5s infinite linear,leftandright 2s infinite ease-in-out;
+.balloon {
+  position: relative;
+  opacity: 0;
+  bottom: -10%;
+  animation: float 7.5s infinite linear, leftandright 2s infinite ease-in-out;
 }
 @keyframes float {
-    0%{
-       opacity: 0;      
-    }
-    25%{
-        opacity: 0.9;
-    }
-    75%{
-        opacity: 0.9;
-    }
-    100%{
-        opacity: 0;
-        bottom:100%;
-    }
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.9;
+  }
+  75% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    bottom: 100%;
+  }
 }
 @keyframes leftandright {
-    0%{
-       left: 0;
-    }
-    25%{
-        left:-0.25em;
-    }
-    50%{
-        left:0;
-    }
-    75%{
-        left:0.25em
-    }
-    100%{
-      left: 0em;
-    }
+  0% {
+    left: 0;
+  }
+  25% {
+    left: -0.25em;
+  }
+  50% {
+    left: 0;
+  }
+  75% {
+    left: 0.25em;
+  }
+  100% {
+    left: 0em;
+  }
 }
-.balloon:nth-child(1)
-{
-    animation-delay: 1s;
-    transform: scale(1.10);
+.balloon:nth-child(1) {
+  animation-delay: 1s;
+  transform: scale(1.1);
 }
-.balloon:nth-child(2)
-{
-    animation-delay: 5s;
+.balloon:nth-child(2) {
+  animation-delay: 5s;
 }
-.balloon:nth-child(3)
-{
-    animation-delay: 0s;
-    z-index: 2;
+.balloon:nth-child(3) {
+  animation-delay: 0s;
+  z-index: 2;
 }
-.balloon:nth-child(4)
-{
-    animation-delay: 3s;
-    transform: scale(0.90);
+.balloon:nth-child(4) {
+  animation-delay: 3s;
+  transform: scale(0.9);
 }
-.balloon:nth-child(5)
-{
-    animation-delay: 7s;
-    transform: scale(0.80);
-    z-index: 2;
+.balloon:nth-child(5) {
+  animation-delay: 7s;
+  transform: scale(0.8);
+  z-index: 2;
 }
-.balloon:nth-child(6)
-{
-    animation-delay: 6s;
-    transform: scale(0.60);
+.balloon:nth-child(6) {
+  animation-delay: 6s;
+  transform: scale(0.6);
 }
-.balloon:nth-child(7)
-{
-    animation-delay: 4.5s;
+.balloon:nth-child(7) {
+  animation-delay: 4.5s;
 }
-.balloonFirstColor{
-    fill: red;
+.balloonFirstColor {
+  fill: red;
 }
-.balloonSecondColor{
-    fill: pink;
+.balloonSecondColor {
+  fill: pink;
 }
-.balloon:nth-child(1) .balloonFirstColor{
-    fill: rgb(255, 153, 0);
+.balloon:nth-child(1) .balloonFirstColor {
+  fill: rgb(255, 153, 0);
 }
-.balloon:nth-child(2) .balloonFirstColor{
-    fill: cyan;
+.balloon:nth-child(2) .balloonFirstColor {
+  fill: cyan;
 }
-.balloon:nth-child(3) .balloonFirstColor{
-    fill: purple;
+.balloon:nth-child(3) .balloonFirstColor {
+  fill: purple;
 }
-.balloon:nth-child(4) .balloonFirstColor{
-    fill: wheat;
+.balloon:nth-child(4) .balloonFirstColor {
+  fill: wheat;
 }
-.balloon:nth-child(5) .balloonFirstColor{
-    fill: silver;
+.balloon:nth-child(5) .balloonFirstColor {
+  fill: silver;
 }
-.balloon:nth-child(6) .balloonFirstColor{
-    fill: royalblue;
+.balloon:nth-child(6) .balloonFirstColor {
+  fill: royalblue;
 }

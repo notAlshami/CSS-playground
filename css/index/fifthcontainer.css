@@ -1,43 +1,40 @@
-.section5container{
-    height: 100%;
-    width: 100%;
-    background-color: beige;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.section5container {
+  height: 100%;
+  width: 100%;
+  background-color: beige;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.imagegalary{
-    position: relative;
-    width: 60rem;
-    height: 60rem;
-    border-radius: 2em;
-    background-color: bisque;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    border:0.2em solid rgb(247, 191, 123);
-   
+.imagegalary {
+  position: relative;
+  width: 60rem;
+  height: 60rem;
+  border-radius: 2em;
+  background-color: bisque;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 0.2em solid rgb(247, 191, 123);
 }
-.imagegalary img{
-    position: relative;
-    width:19rem;
-    height: auto;
-    transition: all 0.350s ease, scale 0.350s 0.1s ease-in;
-    border-radius: 2em;
+.imagegalary img {
+  position: relative;
+  width: 19rem;
+  height: auto;
+  transition: all 0.35s ease, scale 0.35s 0.1s ease-in;
+  border-radius: 2em;
 }
-.imagegalary img:hover{
-    scale:1;
+.imagegalary img:hover {
+  scale: 1;
 }
-
-.imagegalary:has(img:hover) img:not(:hover){
-    scale: 0.8;
+.imagegalary:has(img:hover) img:not(:hover) {
+  scale: 0.8;
 }
-.imagegalary img:not(:hover){
-    background-color: red;
-    scale: 0.9;
-    opacity: 0.7;
-    filter: blur(0.1em) ;
- 
- }
+.imagegalary img:not(:hover) {
+  background-color: red;
+  scale: 0.9;
+  opacity: 0.7;
+  filter: blur(0.1em);
+}

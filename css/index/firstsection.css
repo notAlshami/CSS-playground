@@ -1,150 +1,145 @@
-
-.sec1.corner{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    width:43vw;
-    height: 43vw;
-    max-width: 32em;
-    max-height: 32em;
-    border:0.5rem rgb(255, 188, 100) solid;  
-    border-radius: 1rem;
-    box-shadow: 0px 0px 4rem 1rem #E8810C;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: cornercolor 15s  infinite ease-in;
-    
+.sec1.corner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 43vw;
+  height: 43vw;
+  max-width: 32em;
+  max-height: 32em;
+  border: 0.5rem rgb(255, 188, 100) solid;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 4rem 1rem #e8810c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: cornercolor 15s infinite ease-in;
 }
-.sec1.corner::after,.sec1.corner::before{
-    display: block;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: #222;
-    position: absolute;
+.sec1.corner::after,
+.sec1.corner::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  position: absolute;
 }
-.sec1.corner::after{
-    width: 100vw;
-    background: linear-gradient(to bottom,transparent   ,#222 10%,#222 90%,transparent );
-    animation: rotateshadowafter 15s infinite ease;
-    
+.sec1.corner::after {
+  width: 100vw;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    #222 10%,
+    #222 90%,
+    transparent
+  );
+  animation: rotateshadowafter 15s infinite ease;
 }
-.sec1.corner::before{
-    height: 100vh;
-    background: linear-gradient(to left,transparent   ,#222 10%,#222 90%,transparent );
-    animation: rotateshadowbefore 15s infinite ease;
+.sec1.corner::before {
+  height: 100vh;
+  background: linear-gradient(
+    to left,
+    transparent,
+    #222 10%,
+    #222 90%,
+    transparent
+  );
+  animation: rotateshadowbefore 15s infinite ease;
 }
 .section1container {
-    position: relative;
-    width: 40vw;
-    height: 40vw;
-    max-width: 30em;
-    max-height: 30em;
-    background-color: #E8810C;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1rem;
-    direction: rtl;
-    box-shadow: inset 0px 0px 1rem 0.1rem rgb(255, 188, 100),
-                      0px 0px 5px 1px rgb(255, 188, 100);
-    
+  position: relative;
+  width: 40vw;
+  height: 40vw;
+  max-width: 30em;
+  max-height: 30em;
+  background-color: #e8810c;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  direction: rtl;
+  box-shadow: inset 0px 0px 1rem 0.1rem rgb(255, 188, 100),
+    0px 0px 5px 1px rgb(255, 188, 100);
 }
-
-.section1_details{
-    font-size: 4rem;
-    position: relative;
-    color:rgb(255, 188, 100);
+.section1_details {
+  font-size: 4rem;
+  position: relative;
+  color: rgb(255, 188, 100);
 }
-.section1_details.under{
-    font-size: 2rem;
-    position: absolute;
-    display: block;
-    color:red;
-    bottom:25px;
+.section1_details.under {
+  font-size: 2rem;
+  position: absolute;
+  display: block;
+  color: red;
+  bottom: 25px;
 }
 .section1text::after {
-    content: "";
-    display: inline-block;
-    width: 100%;
-    height: 0.04em;
-    background-color: rgb(255, 188, 100);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: scaleX(0);
-    transition: transform 0.25s;
-    transform-origin: bottom right;
-
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 0.04em;
+  background-color: rgb(255, 188, 100);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.25s;
+  transform-origin: bottom right;
 }
-
 .section1text:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
-
 .section1text::before {
-    content: "";
-    display: inline-block;
-    width: 100%;
-    height: 0.04em;
-    background-color: rgb(255, 188, 100);
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: scaleX(0);
-    transition: transform 0.25s;
-    transform-origin: top left;
-
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 0.04em;
+  background-color: rgb(255, 188, 100);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.25s;
+  transform-origin: top left;
 }
-
 .section1text:hover::before {
-    transform: scaleX(1);
-    transform-origin: top right;
+  transform: scaleX(1);
+  transform-origin: top right;
 }
-
 
 @keyframes rotateshadowafter {
-    0%{
-       transform: rotate(0turn);
-    }
+  0% {
+    transform: rotate(0turn);
+  }
 
-    50%{
-        transform: rotate(0.5turn);
-    }
-    
+  50% {
+    transform: rotate(0.5turn);
+  }
 }
 @keyframes rotateshadowbefore {
-    0%{
-       transform: rotate(0turn);
-        
-    }
+  0% {
+    transform: rotate(0turn);
+  }
 
-    50%{
-        transform: rotate(0.5turn);
-    }
-  
+  50% {
+    transform: rotate(0.5turn);
+  }
 }
-
 @keyframes cornercolor {
-
-    0%{
-        filter: hue-rotate(0turn);
-         
-     }
-     20%{
-        filter: hue-rotate(1turn);
-     }
-     40%{
-        filter: hue-rotate(2.5turn);
-     }
-     50%{
-        filter: hue-rotate(3turn);
-     }
-
+  0% {
+    filter: hue-rotate(0turn);
+  }
+  20% {
+    filter: hue-rotate(1turn);
+  }
+  40% {
+    filter: hue-rotate(2.5turn);
+  }
+  50% {
+    filter: hue-rotate(3turn);
+  }
 }
